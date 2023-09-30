@@ -1,0 +1,6 @@
+animação de click unica que altera a posição do background preto no header para a div clicada
+
+animação de mundança de cor quando houver o evento de scroll da pagina, originar verticalmente
+
+parte central divididade em 3 seções, a das esquerda e direta vão se aproximar da seção central no load da pagina
+junto com a opacidade.

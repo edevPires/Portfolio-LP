@@ -1,0 +1,36 @@
+@font-face {
+    font-family: 'SmallTextBold';
+    src: url(/asset/font/small-text/BRONOVA\ BOLD.OTF) format('opentype');
+}
+
+@font-face {
+    font-family: 'SmallTextRegular';
+    src: url(/asset/font/small-text/BRONOVA\ REGULAR.OTF) format('opentype');
+}
+
+*
+{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root
+{
+    font-size: 10px;
+    --clr-bg: rgba(235,235,235,255);
+    --clr--font-main: rgba(27,27,27,255);
+}
+
+body
+{
+    background-color: var(--clr-bg);
+    height: 100vh;
+}
+
+.hidden
+{
+    display: none;
+}
+
+.active{}

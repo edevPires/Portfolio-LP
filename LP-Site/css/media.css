@@ -1,0 +1,45 @@
+@import url(style.css);
+@import url(header.css);
+
+
+@media screen and (max-width: 900px) {
+    body
+    header 
+    {
+        padding: 0;
+    }
+
+    .header-section 
+    .header-item {
+        height: 100%;
+        display: none;
+    }
+
+    .header-section 
+    .menu
+    {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1366px) {
+    :root
+    {
+        font-size: 14px;
+    }
+
+    body
+    header
+    {
+        height: 140px;
+    }
+
+    body
+    header
+    .header-section
+    #header-logo
+    {
+        height: 80px;
+    }
+}
+
