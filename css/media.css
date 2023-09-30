@@ -1,5 +1,6 @@
 @import url(style.css);
 @import url(header.css);
+@import url(body.css);
 
 
 @media screen and (max-width: 900px) {
@@ -16,6 +17,12 @@
     }
 
     .header-section 
+    .selector
+    {
+        display: none;
+    }
+
+    .header-section 
     .menu
     {
         display: flex;
@@ -25,7 +32,7 @@
 @media screen and (min-width: 1366px) {
     :root
     {
-        font-size: 14px;
+        font-size: 16px;
     }
 
     body
@@ -37,9 +44,22 @@
     body
     header
     .header-section
+    {
+        border-bottom: 4px solid black;
+    }
+
+    body
+    header
+    .header-section
     #header-logo
     {
         height: 80px;
+    }
+
+    body
+    .welcome
+    {
+        padding-top: 140px;
     }
 }
 

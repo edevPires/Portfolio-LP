@@ -8,6 +8,16 @@
     src: url(/asset/font/small-text/BRONOVA\ REGULAR.OTF) format('opentype');
 }
 
+@font-face {
+    font-family: 'BigTextLight';
+    src: url(/asset/font/big-text/MONT-EXTRALIGHTDEMO.OTF) format('opentype');
+}
+
+@font-face {
+    font-family: 'BigTextHeavy';
+    src: url(/asset/font/big-text/MONT-HEAVYDEMO.OTF) format('opentype');
+}
+
 *
 {
     box-sizing: border-box;

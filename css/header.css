@@ -73,7 +73,7 @@ a
     left: 0%;
     transform: translateY(-50%);
     width: 100%;
-    max-width: 120px;
+    max-width: 0px;
     height: 40px;
     padding: 0 10px;
     opacity: 0;
@@ -100,6 +100,7 @@ a
     margin: 4px 0;
     background-color: var(--clr--font-main);
 }
+
 .bar:nth-child(1) {
     /* transform-origin: center;
     transform: translateY(12px) rotate(-45deg); */
