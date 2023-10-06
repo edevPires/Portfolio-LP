@@ -1,23 +1,30 @@
 @import url(style.css);
 @import url(header.css);
+@import url(animation.css);
 
 .welcome
 {
-    display: flex;
-    justify-content: center;
+    position: relative;
     padding-top: 100px;
     height: 100vh;
 }
 
+.welcome-sections
+{
+    height: 70%;
+    display: flex;
+    justify-content: center;
+}
+
+.welcome-sections
 section
 {
-    height: 80%;
     overflow: hidden;
-    padding-top: 40px;
+    padding-top: 30px;
 }
 
 /* First Section */
-
+.welcome-sections
 section:nth-child(1),
 section:nth-child(3)
 {
@@ -25,36 +32,45 @@ section:nth-child(3)
     align-items: center;
     flex-wrap: wrap;
     color: var(--clr--font-main);
+    transition: transform 1s ease-in-out, opacity 1.5s ease-in-out;
 }
 
+.welcome-sections
+section:nth-child(1)
+{
+    transform: translateX(-150px);
+    opacity: 0.3;
+}
+
+.welcome-sections
 section:nth-child(1)
 h1
 {
     width: 100%;
     font-family: BigTextHeavy, sans-serif;
-    font-size: 9rem;
+    font-size: 8rem;
 }
 
+.welcome-sections
 section:nth-child(1)
 h2
 {
     width: 100%;
     font-family: SmallTextBold;
-    font-size: 2.8rem;
+    font-size: 2.5rem;
 }
 
 /* Middle Section */
 
+.welcome-sections
 section:nth-child(2)
 {
     margin: 0 30px;
-}
-
-section:nth-child(2)
-{
     position: relative;
+    max-width: 440px;
 }
 
+.welcome-sections
 section:nth-child(2)
 img
 {
@@ -68,29 +84,255 @@ img
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 16rem;
-    height: 16rem;
-    background-image: url(/asset/img/easter.png);
+    width: 14rem;
+    height: 14rem;
+    background-image: url(/asset/img/profile.jpg);
     border-radius: 50%;
-    background-size: cover;
+    background-position: center;
+    background-size: 130%;
     background-repeat: no-repeat;
 }
 
 /* Right Section */
 
+.welcome-sections
+section:nth-child(3)
+{
+    opacity: 0.3;
+    transform: translateX(150px);
+}
+
+.welcome-sections
 section:nth-child(3)
 h1
 {
     width: 100%;
     font-family: BigTextHeavy, sans-serif;
-    font-size: 9rem;
+    font-size: 8rem;
     line-height: 8rem;
 }
 
+.welcome-sections
 section:nth-child(3)
 h2
 {
     width: 100%;
     font-family: SmallTextBold;
-    font-size: 3.5rem;
+    font-size: 3rem;
+}
+
+.more
+{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: fit-content;
+    padding: 20px;
+}
+
+.more
+button
+{
+    color: white;
+    border: 0;
+    font-size: 2.2rem;
+    font-family: SmallTextRegular;
+    font-weight: bold;
+    padding: 1rem 2.5rem;
+    border-radius: 3rem;
+    transition: transform 0.3s, background-position 0.2s ease;
+    background: linear-gradient(to right, #38cad8, #9a59d8, #d622d2, #dc9068);
+    background-position: center;
+    background-size: 150% 150%;
+    animation: wave 5s ease-in-out infinite;
+}
+
+.more
+button:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}
+
+.floating-work
+{
+    position: absolute;
+    bottom: 2%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.floating-work
+span, i
+{
+    width: 100%;
+    text-align: center;
+    font-family: SmallTextBold;
+    font-size: 1.8rem;
+}
+
+.designs
+{
+    padding: 50px 100px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.designs
+section
+{
+    display: flex;
+    width: 100%;
+    max-width: 1920px;
+    height: fit-content;
+}
+
+.designs
+section
+.design-section
+{
+    width: 33.333%;
+    height: fit-content;
+    border-right: 1px solid black;
+    padding: 0 1.5rem;
+    padding-bottom: 1.5rem;
+}
+
+.designs
+section
+.design-section:last-child
+{
+    border-right: 0;
+}
+
+.designs
+section:nth-child(1){
+    transform: translateY(0.2rem);
+}
+
+/* Pinheiro Vargas */
+section:nth-child(1)
+.design-section:nth-child(1)
+.design
+{
+    height: 100%;
+    background-image: url(/asset/img/pinheiro-vargas/02.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: repeat;
+    background-size: 140%;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+/* Mascote */
+section:nth-child(1)
+.design-section:nth-child(2)
+.design
+{
+    height: 100%;
+    background-image: url(/asset/img/Mascote/linkedin.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+/* Deller */
+section:nth-child(1)
+.design-section:nth-child(3)
+.design
+{
+    height: 100%;
+    background-image: url(/asset/img/fisio-deller/final-deller.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: var(--clr-bg);
+}
+
+section:nth-child(2)
+.design-section
+{
+    border-top: 1px solid black;
+    padding: 1.5rem;
+}
+
+/* Assets Factory */
+
+section:nth-child(2)
+.design-section:nth-child(1)
+.design
+{
+    height: 100%;
+    background-image: url(/asset/img/assets-factory/01-1.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    border: 1px solid;
+    border-radius: 20px;
+}
+
+/* Mascote */
+section:nth-child(2)
+.design-section:nth-child(2)
+.design
+{
+    height: 100%;
+    background-image: url('#');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: var(--clr--font-main);
+}
+
+/* Mascote */
+section:nth-child(2)
+.design-section:nth-child(3)
+.design
+{
+    height: 100%;
+    background-image: url('#');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 140%;
+    border: 1px solid;
+    border-radius: 20px;
+    background-color: var(--clr--font-main);
+}
+
+.designs
+section
+.design-section:hover
+.design
+{
+    transition: transform 0.5s, background-size 2s 0.1s ease;
+    background-size: 100%;
+    transform: scale(1.1) translateX(-10px) translateY(-10px);]
+    
+}
+
+.designs
+section
+.design-section:not(:hover)
+.design
+{
+    transition: transform 0.3s;
+    transform: scale(1);
 }

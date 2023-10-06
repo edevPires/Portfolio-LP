@@ -14,6 +14,8 @@ header
     padding: 0px 100px;
     font-family: SmallTextBold;
     font-weight: 400;
+    background-color: var(--clr-bg);
+    z-index: 1;
 }
 
 

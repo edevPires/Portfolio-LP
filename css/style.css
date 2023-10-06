@@ -10,12 +10,12 @@
 
 @font-face {
     font-family: 'BigTextLight';
-    src: url(/asset/font/big-text/MONT-EXTRALIGHTDEMO.OTF) format('opentype');
+    src: url(/asset/font/big-text/ALTONETRIAL-BOLDOBLIQUE.TTF) format('opentype');
 }
 
 @font-face {
     font-family: 'BigTextHeavy';
-    src: url(/asset/font/big-text/MONT-HEAVYDEMO.OTF) format('opentype');
+    src: url(/asset/font/big-text/ALTONETRIAL-BOLD.TTF) format('opentype');
 }
 
 *

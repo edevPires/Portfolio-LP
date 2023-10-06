@@ -57,9 +57,32 @@
     }
 
     body
+    header 
+    .header-section
+    .selector
+    {
+        height: 60px;
+        border-radius: 30px;
+        transition: left 0.6s ease, max-width 0.6s ease, opacity 0.6s ease;
+    }
+
+    body
     .welcome
     {
         padding-top: 140px;
+    }
+
+    .welcome-sections
+    section:nth-child(1)
+    {
+        transform: translateX(-250px);
+    }
+
+    body
+    .welcome-sections
+    section:nth-child(3)
+    {
+        transform: translateX(250px);
     }
 }
 

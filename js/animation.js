@@ -37,7 +37,7 @@ headerItens.forEach((item) => {
     })
 
         
-})
+}) 
 
 // header Hamburguer Menu
 
@@ -52,28 +52,23 @@ menu.addEventListener('click', () => {
     {
         menu.classList.toggle('active');
         
-        setTimeout(() => {
             firstBar.style.transition = 'transform 0.2s ease-in-out'
             firstBar.style.transformOrigin = 'center';
             firstBar.style.transform = 'translateY(12px) rotate(45deg)';
-        }, 100);     
         
-        secondBar.style.transition = 'opacity 0.1s ease';
+        secondBar.style.transition = 'opacity 0.31s ease';
         secondBar.style.opacity = 0;  
     
-        setTimeout(() => {
             thirdBar.style.transition = 'transform 0.2s ease-in-out';
             thirdBar.style.transformOrigin = 'center';
             thirdBar.style.transform = 'translateY(-12px) rotate(-45deg)';
-        }, 100);
+
     }else{
         menu.classList.toggle('active');
 
         firstBar.style.transform = 'translateY(0px) rotate(0deg)';
         
-        setTimeout(() => {
-            secondBar.style.opacity = 1;  
-        }, 200); 
+        secondBar.style.opacity = 1;  
         
         thirdBar.style.transform = 'translateY(0px) rotate(0deg)';
     }
@@ -81,5 +76,21 @@ menu.addEventListener('click', () => {
     
 })
 
+// Welcome Section
+
+const section1 = document.querySelector('section:nth-child(1)');
+
+const section3 = document.querySelector('section:nth-child(3)');
+
+
+window.addEventListener('load', () => {
+    section1.style.transform = "translateX(0px)";
+    section1.style.opacity = "1";
+})
+
+window.addEventListener('load', () => {
+    section3.style.transform = "translateX(0px)";
+    section3.style.opacity = "1";
+})
 
         
