@@ -322,10 +322,9 @@ section
 .design-section:hover
 .design
 {
-    transition: transform 0.5s, background-size 2s 0.1s ease;
+    transition: transform 0.5s, background-size 2s ease;
     background-size: 100%;
-    transform: scale(1.1) translateX(-10px) translateY(-10px);]
-    
+    transform: scale(1.1) translateX(-10px) translateY(-10px);
 }
 
 .designs
@@ -333,6 +332,7 @@ section
 .design-section:not(:hover)
 .design
 {
-    transition: transform 0.3s;
-    transform: scale(1);
+    transition: transform 0.3s, background-size 0.5s ease;
+    background-size: 140%;
+    transform: scale(1) translateX(0px) translateY(0px);
 }

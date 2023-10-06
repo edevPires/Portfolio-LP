@@ -15,6 +15,7 @@ const selectorReposition = item => {
 }
 
 headerItens.forEach((item) => {
+
     item.addEventListener('click', () => {
         selector.style.opacity = '1';
         item.classList.add('selected');
