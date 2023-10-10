@@ -44,13 +44,6 @@
     body
     header
     .header-section
-    {
-        border-bottom: 4px solid black;
-    }
-
-    body
-    header
-    .header-section
     #header-logo
     {
         height: 80px;
