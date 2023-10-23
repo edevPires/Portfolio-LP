@@ -18,6 +18,11 @@
     src: url(/asset/font/big-text/ALTONETRIAL-BOLD.TTF) format('opentype');
 }
 
+@font-face {
+    font-family: 'Bahnschrift';
+    src: url(/asset/font/small-text/Bahnschrift/BAHNSCHRIFT.TTF) format('opentype');
+}
+
 *
 {
     box-sizing: border-box;

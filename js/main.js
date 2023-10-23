@@ -3,11 +3,13 @@ const headerLinks = document.querySelectorAll('.header-item');
 const designsContainer = document.querySelector('#designs');
 const aboutContainer = document.querySelector('#about');
 const designs = document.querySelectorAll('.design');
+const designSection = document.querySelectorAll('.design-section');
+
 
 headerLinks.forEach(link => {
     link.addEventListener('click', () => {
         if (link.classList.contains('trabalhos')) {
-            const yOffset = designsContainer.offsetTop - header.offsetHeight;
+            const yOffset = designsContainer.offsetTop - header.offsetHeight - 100;
             window.scrollTo({
                 top: yOffset,
                 behavior: "smooth"

@@ -23,7 +23,7 @@ headerItens.forEach((item) => {
         headerItens.forEach((item) => {
             if (item.classList.contains('selected')) {
                 item.classList.remove('selected');
-                item.style.color = 'white';
+                item.style.color = 'var(--clr-bg)';
             } else {
                 item.style.color = 'black';
             }
@@ -64,7 +64,7 @@ menu.addEventListener('click', () => {
             thirdBar.style.transformOrigin = 'center';
             thirdBar.style.transform = 'translateY(-12px) rotate(-45deg)';
 
-    }else{
+    }   else {
         menu.classList.toggle('active');
 
         firstBar.style.transform = 'translateY(0px) rotate(0deg)';

@@ -50,7 +50,8 @@ h1
 {
     width: 100%;
     font-family: BigTextHeavy, sans-serif;
-    font-size: 9rem;
+    font-size: 12rem;
+    line-height: 10rem;
 }
 
 .welcome-sections
@@ -58,8 +59,9 @@ section:nth-child(1)
 h2
 {
     width: 100%;
-    font-family: SmallTextBold;
-    font-size: 3rem;
+    font-family: Bahnschrift;
+    font-weight: 600;
+    font-size: 4rem;
 }
 
 /* Middle Section */
@@ -79,7 +81,8 @@ section:nth-child(2)
 img
 {
     width: auto;
-    height: 100%;
+    max-height: 664px;
+    height: 70%;
 }
 
 .welcome-sections
@@ -90,8 +93,8 @@ section:nth-child(2)::before
     width: 100%;
     height: 20px;
     top: 0;
-    box-shadow: 0 0 70px 80px var(--clr-bg);
-    z-index: 1;
+    box-shadow: 0 0 60px 70px var(--clr-bg);
+    z-index: 0;
 }
 
 /* #easter-img
@@ -117,6 +120,7 @@ section:nth-child(3)
     opacity: 0.3;
     transform: translateX(250px);
     overflow: visible;
+    display: flex;
 }
 
 .welcome-sections
@@ -125,8 +129,8 @@ h1
 {
     width: 100%;
     font-family: BigTextHeavy, sans-serif;
-    font-size: 9rem;
-    line-height: 8rem;
+    font-size: 12rem;
+    line-height: 10rem;
 }
 
 .welcome-sections
@@ -134,8 +138,11 @@ section:nth-child(3)
 h2
 {
     width: 100%;
-    font-family: SmallTextBold;
-    font-size: 3.5rem;
+    font-family: Bahnschrift;
+    font-weight: 600;
+    font-size: 4rem;
+    text-align: start;
+    padding-left: 0.5rem;
 }
 
 .more
@@ -149,13 +156,14 @@ h2
 .more
 button
 {
-    color: white;
+    color: var(--clr-bg);
     border: 0;
     font-size: 2.2rem;
-    font-family: SmallTextRegular;
-    font-weight: bold;
+    font-family: Bahnschrift;
+    font-weight: 600;
     padding: 1rem 2.5rem;
     border-radius: 3rem;
+    margin-left: 0.5rem;
     transition: transform 0.3s, background-position 0.2s ease;
     background: linear-gradient(45deg, #38cad8, #9a59d8, #d622d2, #dc9068);
     background-position: center;
@@ -217,7 +225,7 @@ section
 {
     width: 33.333%;
     height: fit-content;
-    border-right: 0.2rem solid black;
+    border-right: 0.2rem solid var(--clr--font-main);
     padding: 1.5rem;
     padding-bottom: 1.5rem;
 }
@@ -246,7 +254,7 @@ section:nth-child(1)
     background-repeat: repeat;
     background-size: 140%;
     border: 1px solid;
-    border-radius: 20px;
+    border-radius: 4rem;
 }
 
 /* Mascote */
@@ -261,7 +269,7 @@ section:nth-child(1)
     background-repeat: no-repeat;
     background-size: 140%;
     border: 1px solid;
-    border-radius: 20px;
+    border-radius: 4rem;
 }
 
 /* Deller */
@@ -275,17 +283,22 @@ section:nth-child(1)
     background-position: center;
     background-repeat: no-repeat;
     background-size: 140%;
-    border: 1px solid;
-    border-radius: 20px;
+    border-radius: 4rem;
+    border: 1px solid #38cad8;
     background-color: var(--clr-bg);
+}
+
+section:nth-child(2)
+{
+    max-height: 605px;
 }
 
 section:nth-child(2)
 .design-section
 {
-    border-top: 0.2rem solid black;
     padding: 1.5rem;
 }
+
 
 /* Assets Factory */
 
@@ -299,40 +312,31 @@ section:nth-child(2)
     background-position: center;
     background-repeat: no-repeat;
     background-size: 140%;
-    border: 1px solid;
-    border-radius: 20px;
+    border-radius: 4rem;
 }
 
 /* Mascote */
 section:nth-child(2)
 .design-section:nth-child(2)
-.design
 {
-    height: 100%;
+    width: 66.7%;
+    height: fit-content;
+}
+
+section:nth-child(2)
+.design-section:nth-child(2)
+.inProgress
+{
+    width: 100%;
+    padding-bottom: calc(50% - 15px);
     background-image: url('#');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-size: 140%;
-    border: 1px solid;
-    border-radius: 20px;
-    background-color: var(--clr--font-main);
-}
-
-/* Mascote */
-section:nth-child(2)
-.design-section:nth-child(3)
-.design
-{
-    height: 100%;
-    background-image: url('#');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 140%;
-    border: 1px solid;
-    border-radius: 20px;
-    background-color: var(--clr--font-main);
+    border-radius: 4rem;
+    background-color: var(--clr-bg);
+    border: 0.1rem solid rgba(0, 0, 0, 0.152);
 }
 
 .designs
@@ -385,7 +389,7 @@ h1
 .about-profile
 {
     width: 40%;
-    border: 1px solid black;
+    border: 1px solid var(--clr--font-main);
     border-radius: 4rem;
 }
 
