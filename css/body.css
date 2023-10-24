@@ -418,15 +418,15 @@ h1
     font-family: BigTextHeavy, sans-serif;
     font-size: 8rem;
     color: var(--clr--font-main);
-    border-bottom: 0.2rem solid var(--clr--font-main);
 }
 
 .about
 .about-profile
 {
     width: 40%;
-    border: 1px solid var(--clr--font-main);
-    border-radius: 4rem;
+    background-image: url(/asset/img/Sobre-mim-foto.png);
+    background-size: contain;
+    background-repeat: no-repeat;
 }
 
 .about-me
