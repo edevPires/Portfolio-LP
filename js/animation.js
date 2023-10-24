@@ -95,3 +95,25 @@ window.addEventListener('load', () => {
 })
 
         
+const circle = document.querySelector('.circle');
+const container = document.querySelector('.design-section:nth-child(2) .inProgress');
+
+container.addEventListener('mousemove', function (event) {
+
+    const divArea = container.getBoundingClientRect();
+
+    const mouseX = event.clientX - divArea.left;
+    const mouseY = event.clientY - divArea.top;
+
+    circle.style.top = mouseY - (circle.clientHeight / 2) + 'px';
+    circle.style.left = mouseX - (circle.clientWidth / 2) + 'px';
+})
+
+
+
+container.addEventListener('mouseover', () => {
+    circle.style.opacity = '1';
+})
+container.addEventListener('mouseleave', () => {
+    circle.style.opacity = '0'
+})
