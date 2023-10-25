@@ -377,6 +377,7 @@ section:nth-child(2)
     border-radius: 50%;
     filter: blur(8rem);
     background: linear-gradient(45deg, #38cad8, #d622d2);
+    opacity: 0;
     transition: opacity 0.5s;
 }
 
@@ -429,8 +430,9 @@ section
 .design-section:hover
 .design
 {
-    transition: transform 0.5s, background-size 2s ease;
+    transition: transform 0.5s, background-size 2s ease, box-shadow 0.5s ease;
     background-size: 100%;
+    box-shadow: rgba(0, 0, 0, 0.808) 3px -40px 120px 30px inset;
     transform: scale(1.1) translateX(-10px) translateY(-10px);
 }
 
@@ -439,8 +441,9 @@ section
 .design-section:not(:hover)
 .design
 {
-    transition: transform 0.3s, background-size 0.5s ease;
+    transition: transform 0.3s, background-size 0.5s ease, box-shadow 0.5s ease;
     background-size: 140%;
+    box-shadow: 0;
     transform: scale(1) translateX(0px) translateY(0px);
 }
 
