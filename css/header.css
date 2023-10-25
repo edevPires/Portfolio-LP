@@ -17,6 +17,7 @@ header
     background-color: var(--clr-bg);
     z-index: 2;
     box-shadow: 0;
+    transition: box-shadow 0.5s;
 }
 
 

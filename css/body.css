@@ -98,6 +98,8 @@ section:nth-child(2)::before
     height: 12rem;
     top: 80%;
     left: 20%;
+    animation: logoRotate 0.8s 1s ease-in-out forwards;
+
     transform: translate(-50%, -50%);
 }
 
@@ -256,7 +258,7 @@ section:nth-child(1)
     background-size: cover;
     background-position: center;
     background-repeat: repeat;
-    background-size: 140%;
+    background-size: 100%;
     border: 1px solid;
     border-radius: 4rem;
 }
@@ -271,7 +273,7 @@ section:nth-child(1)
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 100%;
     border: 1px solid;
     border-radius: 4rem;
 }
@@ -287,7 +289,7 @@ section:nth-child(1)
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 100%;
     border-radius: 4rem;
     border: 1px solid #38cad8;
     background-color: var(--clr-bg);
@@ -316,7 +318,7 @@ section:nth-child(2)
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 140%;
+    background-size: 100%;
     border-radius: 4rem;
 }
 
@@ -431,7 +433,7 @@ section
 .design
 {
     transition: transform 0.5s, background-size 2s ease, box-shadow 0.5s ease;
-    background-size: 100%;
+    background-size: 120%;
     box-shadow: rgba(0, 0, 0, 0.808) 3px -40px 120px 30px inset;
     transform: scale(1.1) translateX(-10px) translateY(-10px);
 }
@@ -442,7 +444,7 @@ section
 .design
 {
     transition: transform 0.3s, background-size 0.5s ease, box-shadow 0.5s ease;
-    background-size: 140%;
+    background-size: 100%;
     box-shadow: 0;
     transform: scale(1) translateX(0px) translateY(0px);
 }
@@ -460,7 +462,7 @@ section
 
 .about
 {
-    padding: 5rem 100px;
+    padding: 50px 100px;
     display: flex;
     margin: 0 auto;
     flex-wrap: wrap;
@@ -501,3 +503,45 @@ h1
     color: var(--clr--font-main);
 }
 
+.contact-container
+{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10rem 100px;
+}
+
+#contact-button
+{
+    color: var(--clr-bg);
+    border: 0;
+    font-size: 3rem;
+    font-family: Bahnschrift;
+    font-weight: 600;
+    padding: 2rem 2.5rem;
+    border-radius: 4rem;
+    margin-left: 0.5rem;
+    transition: transform 0.3s, background-position 0.2s ease;
+    background: linear-gradient(45deg, #38cad8, #9a59d8, #d622d2, #dc9068);
+    background-position: center;
+    background-size: 140% 140%;
+    animation: wave 3s ease-in-out infinite;
+
+}
+
+#contact-button:hover
+{
+    cursor: pointer;
+    transform: scale(1.1);
+}
+
+.contact-container
+img
+{
+    position: absolute;
+    width: auto;
+    height: 20rem;
+    margin-left: auto;
+    left: calc(100% - 30rem)
+}

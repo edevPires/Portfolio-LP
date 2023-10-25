@@ -14,7 +14,7 @@ window.addEventListener('scroll', () => {
         header.style.boxShadow = 'rgba(149, 157, 165, 0.2) 0px 8px 24px';
     } else
     {
-        header.style.boxShadow = '0';
+        header.style.boxShadow = 'rgba(0, 0, 0, 0) 0px 0px 0px';
     }
 
 })
