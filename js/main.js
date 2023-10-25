@@ -5,6 +5,19 @@ const aboutContainer = document.querySelector('#about');
 const designs = document.querySelectorAll('.design');
 const designSection = document.querySelectorAll('.design-section');
 
+window.addEventListener('scroll', () => {
+    
+    const scrollCoordinades = window.scrollY;
+
+    if (scrollCoordinades > 100)
+    {
+        header.style.boxShadow = 'rgba(149, 157, 165, 0.2) 0px 8px 24px';
+    } else
+    {
+        header.style.boxShadow = '0';
+    }
+
+})
 
 headerLinks.forEach(link => {
     link.addEventListener('click', () => {

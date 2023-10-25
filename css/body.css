@@ -74,6 +74,7 @@ section:nth-child(2)
     align-items: center;
     margin: 0 5rem;
     position: relative;
+    overflow: visible;
 }
 
 .welcome-sections
@@ -90,11 +91,14 @@ section:nth-child(2)::before
 {
     content: '';
     position: absolute;
-    width: 100%;
-    height: 20px;
-    top: 0;
-    box-shadow: 0 0 60px 70px var(--clr-bg);
-    z-index: 0;
+    background-image: url(/asset/img/logo+criatividade-que-valoriza.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 12rem;
+    height: 12rem;
+    top: 80%;
+    left: 20%;
+    transform: translate(-50%, -50%);
 }
 
 /* #easter-img
@@ -279,6 +283,7 @@ section:nth-child(1)
 {
     height: 100%;
     background-image: url(/asset/img/fisio-deller/final-deller.png);
+    background-color: red;
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
@@ -375,6 +380,50 @@ section:nth-child(2)
     transition: opacity 0.5s;
 }
 
+.design
+{
+    display: flex;
+    align-items: end;
+    overflow: hidden;
+}
+
+.tag-container
+{
+    opacity: 0;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 1rem;
+    transition: opacity 0.5s;
+}
+
+.tag-container
+.design-name
+{
+    width: 100%;
+    color: var(--clr-bg);
+    font-family: bigTextHeavy;
+    font-size: 2.5rem;
+    padding: 1rem;
+}
+
+.tag-container
+.design-tag
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--clr-bg);
+    font-size: 1.5rem;
+    font-family: SmallTextRegular;
+    padding: 0.5rem 1.5rem;
+    border: 1px solid var(--clr-bg);
+    border-radius: 2rem;
+    margin: 0.5rem 0.3rem;
+}
+
+
+
 .designs
 section
 .design-section:hover
@@ -395,6 +444,15 @@ section
     transform: scale(1) translateX(0px) translateY(0px);
 }
 
+.designs
+section
+.design-section:hover
+.design
+.tag-container
+{
+    opacity: 1;
+}
+
 /* About Section */
 
 .about
@@ -409,7 +467,7 @@ section
 .about-title
 {
     width: 100%;
-    margin-bottom: 100px;
+    margin-bottom: 5rem;
 }
 
 .about-title
