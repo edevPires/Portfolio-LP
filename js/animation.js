@@ -1,6 +1,7 @@
+
 // Header Background Slide
 
-const headerItens = document.querySelectorAll('.item');
+const headerItens = document.querySelectorAll('.header-item .item');
 
 const selector = document.querySelector('.selector');
 
@@ -48,21 +49,27 @@ const firstBar = document.querySelector('.bar:nth-child(1)');
 const secondBar = document.querySelector('.bar:nth-child(2)');
 const thirdBar = document.querySelector('.bar:nth-child(3)');
 
+const sidebarBg = document.querySelector('.sidebar-bg');
+const sidebar = document.querySelector('.sidebar');
+
 menu.addEventListener('click', () => {
     if(!menu.classList.contains('active'))
     {
         menu.classList.toggle('active');
         
-            firstBar.style.transition = 'transform 0.2s ease-in-out'
-            firstBar.style.transformOrigin = 'center';
-            firstBar.style.transform = 'translateY(12px) rotate(45deg)';
+        firstBar.style.transition = 'transform 0.2s ease-in-out'
+        firstBar.style.transformOrigin = 'center';
+        firstBar.style.transform = 'translateY(12px) rotate(45deg)';
         
         secondBar.style.transition = 'opacity 0.31s ease';
         secondBar.style.opacity = 0;  
     
-            thirdBar.style.transition = 'transform 0.2s ease-in-out';
-            thirdBar.style.transformOrigin = 'center';
-            thirdBar.style.transform = 'translateY(-12px) rotate(-45deg)';
+        thirdBar.style.transition = 'transform 0.2s ease-in-out';
+        thirdBar.style.transformOrigin = 'center';
+        thirdBar.style.transform = 'translateY(-12px) rotate(-45deg)';
+
+        sidebarBg.style.opacity = '1';
+        sidebar.style.transform = 'translateX(0rem)';
 
     }   else {
         menu.classList.toggle('active');
@@ -72,6 +79,12 @@ menu.addEventListener('click', () => {
         secondBar.style.opacity = 1;  
         
         thirdBar.style.transform = 'translateY(0px) rotate(0deg)';
+
+        sidebar.style.transform = 'translateX(-40rem)';
+
+        setTimeout(() => {
+            sidebarBg.style.opacity = '0';
+        }, 500)
     }
     
     

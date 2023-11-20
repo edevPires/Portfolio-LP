@@ -15,12 +15,15 @@
 {
     height: 70%;
     display: flex;
-    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
 }
 
 .welcome-sections
 section
 {
+    width: 33.333%;
     overflow: hidden;
     padding-top: 30px;
 }
@@ -40,6 +43,7 @@ section:nth-child(3)
 .welcome-sections
 section:nth-child(1)
 {
+    justify-content: end;
     transform: translateX(-250px);
     opacity: 0.3;
 }
@@ -71,10 +75,11 @@ section:nth-child(2)
 {
     position: relative;
     display: flex;
+    justify-content: center;
     align-items: center;
-    margin: 0 5rem;
     position: relative;
     overflow: visible;
+    height: 80%;
 }
 
 .welcome-sections
@@ -83,7 +88,7 @@ img
 {
     width: auto;
     max-height: 664px;
-    height: 70%;
+    height: 100%;
 }
 
 .welcome-sections
@@ -94,10 +99,10 @@ section:nth-child(2)::before
     background-image: url(/asset/img/logo+criatividade-que-valoriza.png);
     background-size: contain;
     background-repeat: no-repeat;
-    width: 12rem;
-    height: 12rem;
-    top: 80%;
-    left: 20%;
+    width: 11rem;
+    height: 11rem;
+    top: 90%;
+    left: 30%;
     animation: logoRotate 0.8s 1s ease-in-out forwards;
 
     transform: translate(-50%, -50%);
@@ -127,6 +132,7 @@ section:nth-child(3)
     transform: translateX(250px);
     overflow: visible;
     display: flex;
+    justify-content: start;
 }
 
 .welcome-sections
@@ -385,6 +391,7 @@ section:nth-child(2)
 
 .design
 {
+    position: relative;
     display: flex;
     align-items: end;
     overflow: hidden;
@@ -434,7 +441,6 @@ section
 {
     transition: transform 0.5s, background-size 2s ease, box-shadow 0.5s ease;
     background-size: 120%;
-    box-shadow: rgba(0, 0, 0, 0.808) 3px -40px 120px 30px inset;
     transform: scale(1.1) translateX(-10px) translateY(-10px);
 }
 
@@ -541,7 +547,7 @@ img
 {
     position: absolute;
     width: auto;
-    height: 20rem;
+    height: 17rem;
     margin-left: auto;
     left: calc(100% - 30rem)
 }

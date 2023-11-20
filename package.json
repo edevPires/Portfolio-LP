@@ -1,0 +1,14 @@
+{
+  "name": "portfolio-lp",
+  "version": "1.0.0",
+  "description": "Web portfolio for designer Lara Pires",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "DevPires",
+  "license": "ISC",
+  "dependencies": {
+    "animate.css": "^4.1.1"
+  }
+}

@@ -1,3 +1,5 @@
+@import url(/node_modules/animate.css/animate.css);
+
 @font-face {
     font-family: 'SmallTextBold';
     src: url(/asset/font/small-text/BRONOVA\ BOLD.OTF) format('opentype');
