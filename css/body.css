@@ -46,6 +46,7 @@ section:nth-child(1)
     justify-content: end;
     transform: translateX(-250px);
     opacity: 0.3;
+    order: 0;
 }
 
 .welcome-sections
@@ -80,6 +81,7 @@ section:nth-child(2)
     position: relative;
     overflow: visible;
     height: 80%;
+    order: 2;
 }
 
 .welcome-sections
@@ -104,7 +106,7 @@ section:nth-child(2)::before
     top: 90%;
     left: 30%;
     animation: logoRotate 0.8s 1s ease-in-out forwards;
-
+    z-index: 1;
     transform: translate(-50%, -50%);
 }
 
@@ -133,6 +135,7 @@ section:nth-child(3)
     overflow: visible;
     display: flex;
     justify-content: start;
+    order: 3;
 }
 
 .welcome-sections

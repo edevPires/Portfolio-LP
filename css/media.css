@@ -1,13 +1,17 @@
 @import url(style.css);
 @import url(header.css);
 @import url(body.css);
+@import url(sidebar.css);
 
 
 @media screen and (max-width: 900px) {
-    body
-    header 
+
+    /* HEADER */
+
+    .header-section
+    #header-logo
     {
-        padding: 0;
+        display: none;
     }
 
     .header-section 
@@ -22,11 +26,12 @@
         display: none;
     }
 
-    .header-section 
     .menu
     {
         display: flex;
     }
+
+    /* BODY */
 }
 
 
@@ -80,4 +85,5 @@
         transform: translateX(250px);
     }
 }
+
 
